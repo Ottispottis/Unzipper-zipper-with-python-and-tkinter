@@ -27,11 +27,11 @@ def zip_file():
     file = askopenfile(parent=root, mode="rb", filetype=[("Zip file", "*.zip")])
     if file:
         unzipping = zipfile.ZipFile(file)
-        unzipping.extractall("S:\pythonstuff") #Location where the files will be unzipped, change this to any directory you like
+        unzipping.extractall("S:\pythonstuff") # Location where the files will be unzipped, change this to any directory you like
         unzipping.close()
         text = "File extracted"
 
-        
+
         textbox = tk.Text(root, height=2, width=11, padx=15, pady=10, font="Raleway")
         textbox.insert(1.0, text)
         textbox.grid(column=1, row=4)
