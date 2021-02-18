@@ -1,3 +1,5 @@
+# zipper/unzipper made by Otto Heldt
+
 import tkinter as tk
 import zipfile
 from tkinter.filedialog import askopenfile
@@ -29,7 +31,7 @@ def zip_file():
         unzipping.close()
         text = "File extracted"
 
-        # Textbox
+        
         textbox = tk.Text(root, height=2, width=11, padx=15, pady=10, font="Raleway")
         textbox.insert(1.0, text)
         textbox.grid(column=1, row=4)
