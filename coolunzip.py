@@ -24,7 +24,7 @@ def zip_file():
     file = askopenfile(parent=root, mode="rb", filetype=[("Zip file", "*.zip")])
     if file:
         unzipping = zipfile.ZipFile(file)
-        unzipping.extractall("S:\pythonstuff")
+        unzipping.extractall("S:\pythonstuff") #Location where the files will be unzipped, change this to any directory you like
         unzipping.close()
         text = "File extracted"
 
